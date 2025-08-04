@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Product list with cart</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="stylesheet" href="./src/style.css">
+</head>
+
+<body>
+  <main class="container">
+    <div class="product-list-container">
+      <h1 class="product-list-title">Desserts</h1>
+      <div class="product-list" id="product-list">
+        <!-- The products will be inserted here dynamically with JavaScript -->
+      </div>
+    </div>
+
+    <aside class="cart-container">
+      <h2 class="cart-title">Your Cart (<span id="cart-quantity">0</span>)</h2>
+      <div class="cart-items" id="cart-items">
+        <!-- The items cart will be inserted here dynamically with JavaScript -->
+        <div class="cart-empty">
+          <img class="empty-cart-img" src="./assets/images/illustration-empty-cart.svg" alt="empty-cart">
+          <p class="cart-empty-message">Your added items will appear here</p>
+        </div>
+      </div>
+      <div class="cart-footer" id="cart-footer">
+        <!-- The total and button will be inserted here dynamically with JavaScript -->
+       </div>
+    </aside>
+
+    <dialog class="modal-overlay" id="modal-overlay">
+      <div class="modal" id="modal">
+        <!-- The modal will be inserted here dynamically with JavaScript -->      
+      </div>
+    </dialog>
+  </main>
+
+
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io/challenges/product-list-with-cart-5MmqLVAp_d" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://www.github.com/ecc97" target="_blank">ecc97</a>.
+  </footer>
+  <script src="./src/main.js" type="module"></script>
+</body>
+
+</html>
